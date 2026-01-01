@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your first challenge</h1>
+    <p>
+        Bitcoin is censorship-resistant money. Anybody can send money by broadcasting a transaction to the network. After broadcast, transactions are packaged up into blocks by miners. 
+        Miners compete against other miners for the privilege of building on the chain. This is what keeps bitcoin decentralized.
+    </p>
+    <h3><a href="https://blockstream.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f">The Genesis Block</a></h3>
+    <p>
+        First challenge was to find the Scriptsig Hex of the coinbase transaction in the Genesis Block. The answer is:
+        <strong>04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73</strong>
+        <br>
+        The code is encoded in a HEX format. Now we will run a command to turn it into ASCII, which we will be able to read.
+        This hex decodes to the famous newspaper headline: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
+        <br>
+        This message was included by Satoshi Nakamoto in the coinbase of the Genesis Block to prove that the block was created after that date, and to highlight the instability of the traditional banking system.
+    </p>
+    <p>To decode the message, I used the command <br> <strong>echo $scriptSigHex | xxd -r -p</strong></p>
+
+    <h2><a href="https://blockstream.info/tx/ff9148605a772a51cba39004df5fb042d40515967a3e38ff5294cfd017c452a9">OP_RETURN</a></h2>
+    <p>There's another way to hide secret messages in transactions. Bitcoin has a special type of code called OP_RETURN that allows users to attach messages to transaction outputs.</p>
+    <p>OP_RETURN is often used to store small pieces of data on the blockchain, such as digital signatures, timestamps, or even short messages. However, it's important to note that data stored using OP_RETURN is not spendable and is considered provably unspendable.</p>
+    <p><strong>44697374726963742032312c20426974636f696e2046726565646f6d205a6f6e65</strong></p>
+    <p>
+        To decode it, I used the same command as before: <br> <strong>echo "44697374726963742032312c20426974636f696e2046726565646f6d205a6f6e65" | xxd -r -p</strong> since the constant was not defined.
+        
+        This hex decodes to: "District 21, Bitcoin Freedom Zone"</p>
+</body>
+</html>

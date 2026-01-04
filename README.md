@@ -16,6 +16,14 @@ A hands-on exploration of Bitcoin's technical foundations through practical exer
 - Simulated mining 100 blocks, processing 350,000 transactions
 - Learned about miner economics: block subsidies + transaction fees
 
+### Chapter 3: Mining Pools & 51% Attacks
+
+- Experienced a simulated 51% attack scenario with empty block mining
+- Learned about the Stratum protocol and extraNonce mechanism
+- Understood how mining pools coordinate work distribution (extranonce1 & extranonce2)
+- Explored reward distribution: transaction fees + block subsidy
+- Studied pool metrics: hash rate percentage, block found percentage, partial solution percentage
+
 ---
 
 ## 🛠️ Skills Gained
@@ -27,8 +35,8 @@ A hands-on exploration of Bitcoin's technical foundations through practical exer
 ---
 
 ## 🎯 Next Steps
-### Chapter 3
-The 51% Attack
+### Chapter 4
+Claiming Your 1.61 Bitcoin
 
 ---
 

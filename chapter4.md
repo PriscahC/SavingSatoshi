@@ -1,4 +1,3 @@
-```
 # Chapter 4: Key Pairs 🔑
 
 A single **key pair** is all that’s needed to create a Bitcoin wallet and control the funds within it.

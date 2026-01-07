@@ -46,6 +46,8 @@ The Bitcoin protocol has a very specific algorithm for creating messages from tr
 
 Use the [hex API endpoint](https://blockstream.info/api/tx/f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16/hex) to retrieve the complete transaction bytes.
 
+https://github.com/user-attachments/assets/79158ab1-d0df-4b3b-8c1e-e61940d5bd84
+
 ### Step 2: Build the Message to Sign
 
 It's impossible to sign a message containing its own signature, so the `scriptSig` is replaced by the `scriptPubKey` of the transaction output being spent.

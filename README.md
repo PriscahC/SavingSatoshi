@@ -54,7 +54,7 @@ A hands-on exploration of Bitcoin's technical foundations through practical exer
 ---
 
 ## Next Steps
-- Chapter 5.2: Validating the signature
+- Chapter 6: The Keyholder
 
 ---
 

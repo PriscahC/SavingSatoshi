@@ -62,5 +62,7 @@ The message serializations for all these components is documented here:
 - [Bitcoin Book - Transactions](https://github.com/bitcoinbook/bitcoinbook/blob/6d1c26e1640ae32b28389d5ae4caf1214c2be7db/ch06_transactions.adoc)
 
 ---
+<img width="957" height="529" alt="Screenshot 2026-01-09 210851" src="https://github.com/user-attachments/assets/11b8f53d-8227-43ee-b476-b1bfc390af18" />
 
-**Image:** The input class implementation
+
+
